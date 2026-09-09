@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Opnix | Feedback</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background: #f8fafc;
+            color: #0f172a;
+        }
+
+      .feedback-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.feedback-container {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+        .feedback-header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .feedback-header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .feedback-header h1 span {
+            color: #0d7ff2;
+        }
+
+        .feedback-header p {
+            color: #64748b;
+            font-size: 15px;
+        }
+
+        .feedback-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group label {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            background: #f8fafc;
+            font-family: inherit;
+            font-size: 14px;
+            outline: none;
+            transition: 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            background: #ffffff;
+            border-color: #0d7ff2;
+            box-shadow: 0 0 0 3px rgba(13, 127, 242, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .feedback-btn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 50px;
+            background: #0d7ff2;
+            color: white;
+            font-family: inherit;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .feedback-btn:hover {
+            background: #075fc0;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 600px) {
+
+            .feedback-section {
+                padding: 25px 15px;
+            }
+
+            .feedback-container {
+                padding: 30px 20px;
+                border-radius: 18px;
+            }
+
+            .feedback-header h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="feedback-section">
+
+        <div class="feedback-container">
+
+            <div class="feedback-header">
+                <h1>Share Your <span>Feedback</span></h1>
+                <p>We'd love to hear your thoughts and suggestions.</p>
+            </div>
+
+            <form class="feedback-form">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Write your feedback..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="feedback-btn">
+                    Send Feedback
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

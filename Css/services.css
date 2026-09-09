@@ -1,0 +1,156 @@
+.page-header {
+  padding: 10px 8% 50px;
+  text-align: center;
+}
+
+.page-header h1 {
+  margin: 10px auto 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #0f172a;
+  background: linear-gradient(135deg, #0f172a, #2563eb, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-header p {
+  max-width: 650px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #64748b;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  padding: 6px 8% 0px;
+}
+
+.feature,
+.service-card {
+  position: relative;
+  overflow: hidden;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(219, 234, 254, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(37, 99, 235, 0.07);
+  transition: 0.35s ease;
+}
+
+.feature::before,
+.service-card::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  right: -50px;
+  background: rgba(56, 189, 248, 0.15);
+  border-radius: 50%;
+  filter: blur(3px);
+  transition: 0.4s ease;
+}
+
+.feature h3::after,
+.service-card h3::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  margin-top: 8px;
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+  border-radius: 5px;
+}
+
+.feature p,
+.service-card p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.feature:hover,
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.13);
+}
+
+.feature:hover::before,
+.service-card:hover::before {
+  transform: scale(1.5);
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 70px 6% 35px;
+  }
+
+  .page-header h1 {
+    font-size: 38px;
+  }
+
+  .services {
+    padding: 40px 6% 70px;
+    gap: 20px;
+  }
+
+  .feature,
+  .service-card {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header {
+    padding: 55px 20px 30px;
+  }
+
+  .page-header h1 {
+    font-size: 31px;
+  }
+
+  .page-header p {
+    font-size: 14px;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+    padding: 30px 20px 60px;
+  }
+
+  .feature,
+  .service-card {
+    padding: 25px;
+    border-radius: 18px;
+  }
+}
+
+.header-animation1 {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.header-animation1 iframe {
+  width: 500px;
+  height: 500px;
+  border: none;
+  transform: translate(-100px, -150px);
+}
