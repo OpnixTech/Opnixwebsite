@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,22 +22,22 @@
             color: #0f172a;
         }
 
-      .feedback-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
+        .feedback-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
 
-.feedback-container {
-    width: 100%;
-    max-width: 500px;
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 16px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
-}
+        .feedback-container {
+            width: 100%;
+            max-width: 500px;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+        }
 
         .feedback-header {
             text-align: center;
@@ -147,54 +148,60 @@
                 <p>We'd love to hear your thoughts and suggestions.</p>
             </div>
 
-            <form class="feedback-form">
+      
+<form
+  class="feedback-form"
+  action="https://formspree.io/f/xppwrkyq"
+  method="POST"
+>
 
-                <div class="form-group">
-                    <label for="name">Name</label>
+  <div class="form-group">
+    <label for="name">Name</label>
 
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Enter your name"
-                        required
-                    >
-                </div>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Enter your name"
+      required
+    >
+  </div>
 
-                <div class="form-group">
-                    <label for="email">Email</label>
+  <div class="form-group">
+    <label for="email">Email</label>
 
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        required
-                    >
-                </div>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Enter your email"
+      required
+    >
+  </div>
 
-                <div class="form-group">
-                    <label for="message">Message</label>
+  <div class="form-group">
+    <label for="message">Message</label>
 
-                    <textarea
-                        id="message"
-                        name="message"
-                        placeholder="Write your feedback..."
-                        required
-                    ></textarea>
-                </div>
+    <textarea
+      id="message"
+      name="message"
+      placeholder="Write your feedback..."
+      required
+    ></textarea>
+  </div>
 
-                <button type="submit" class="feedback-btn">
-                    Send Feedback
-                </button>
+  <button type="submit" class="feedback-btn">
+    Send Feedback
+  </button>
 
-            </form>
+</form>
+```
+
 
         </div>
 
     </section>
 
 </body>
+
 </html>
-
-

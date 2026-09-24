@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,174 +8,483 @@
   <link rel="icon" type="image/png" href="img/20260211_200407.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="./Css/style.css">
-<link rel="stylesheet" href="./Css/about.css">
+  <link rel="stylesheet" href="./Css/style.css">
+  <link rel="stylesheet" href="./Css/about.css">
 
   <script defer src="./Script.js"></script>
 </head>
+
 <body>
 
-<nav class="navbar">
+  <nav class="navbar">
 
-  <div class="logo-box">
-    <div class="logo-img">
-  <a href="./index.html">
-    <img src="./img/20260211_200407.png" alt="logo">
-  </a>
-</div>
-    <div class="logo-name">Opnix</div>
-  </div>
-
-  <ul class="nav-links" id="navLinks">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="members.html">Members</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-
-<div class="menu-toggle" id="menuToggle">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-
-</nav>
-
-<section class="about-hero">
-  <h1>About Opnix</h1>
-  <p>
-    We are a software-focused company building modern, scalable,
-    and reliable digital solutions for businesses and creators.
-  </p>
-</section>
-
-<section class="about-section">
-  <div class="about-block">
-    <h2>Who We Are</h2>
-    <p>
-      Opnix.ltd is a technology and software services company dedicated
-      to turning ideas into practical digital products with clarity
-      and precision.
-    </p>
-  </div>
-
-  <div class="about-block">
-    <h2>What We Do</h2>
-    <p>
-      We offer web and app development, AI tools, design services,
-      application management, and content-driven growth solutions.
-    </p>
-  </div>
-
-  <div class="about-block">
-    <h2>Our Vision</h2>
-    <p>
-      Our vision is to create technology that is simple, efficient,
-      and powerful enough to support long-term growth.
-    </p>
-  </div>
-
-  <div class="about-block">
-    <h2>Founded By</h2>
-    <p>
-      Opnix.ltd was founded by <strong>Abhay Kurmi</strong> with a focus
-      on quality, creativity, and meaningful innovation.
-    </p>
-  </div>
-</section>
-
-<section class="cta">
-  <h2>Let’s turn your ideas into reality with Opnix</h2>
-  <p>
-    From concept to execution, we help build digital solutions that matter.
-  </p>
-  <a href="contact.html" class="btn">Contact Us</a>
-</section>
-
-<footer class="footer">
-  <div class="footer-content">
-
-    <!-- Brand -->
-    <div class="footer-brand">
-      <h3>Opnix<span>.</span>Ltd</h3>
-      <p>
-        Turning ideas into reliable digital products through
-        design, technology, and innovation.
-      </p>
-
-      <!-- Social Media -->
-      <div class="footer-socials">
-        <a href="https://instagram.com/opnixtech.ltd" target="_blank" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/opnixtech/" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="#" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="#" target="_blank" aria-label="Twitter">
-          <i class="fab fa-x-twitter"></i>
+    <div class="logo-box">
+      <div class="logo-img">
+        <a href="./index.html">
+          <img src="./img/20260211_200407.png" alt="logo">
         </a>
       </div>
+      <div class="logo-name">Opnix</div>
+
+
+
+
     </div>
 
-    <!-- Company -->
-    <div class="footer-links">
-      <h4>Company</h4>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  <!-- Contact -->
-    <div class="footer-contact">
-      <h4>Contact</h4>
-      <p>Email: <a href="mailto:opnixtech@gmail.com">opnixtech@gmail.com</a></p>
-      <p>Location: India</p>
-    </div>
-    <!-- Resources -->
-    <div class="footer-links">
-      <h4>Resources</h4>
-      <a href="#">Blogs & Articles</a>
-      <a href="#">Case Studies</a>
-      <a href="#">Documentation</a>
-      <a href="#">FAQs</a>
-      <a href="#">Community</a>
-      <a href="#">Open Source</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="members.html">Members</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
-    <!-- Support -->
-    <div class="footer-links">
-      <h4>Support</h4>
-      <a href="feedback.html">Feedback</a>
-      <a href="#">Help Center</a>
-      <a href="#">Report a Bug</a>
-      <a href="#">Terms & Conditions</a>
-      <a href="#">Privacy Policy</a>
+  </nav>
+
+  <!-- ==================================================
+     ABOUT HERO
+================================================== -->
+
+  <section class="about-hero">
+
+    <div class="about-hero-content">
+
+      <span class="section-label">ABOUT OPNIX</span>
+
+      <h1>
+        We build digital solutions
+        <span>with a reason to exist.</span>
+      </h1>
+
+      <p>
+        Opnix is a technology and digital solutions company focused on
+        building useful software, intelligent tools, and meaningful
+        digital experiences.
+      </p>
+
     </div>
 
-  </div>
+    <div class="about-hero-meta">
+      <span>Software</span>
+      <span>Design</span>
+      <span>AI</span>
+      <span>Digital Solutions</span>
+    </div>
 
-  <!-- Feedback CTA -->
-  <div class="footer-feedback">
+  </section>
+
+
+  <!-- ==================================================
+     WHAT IS OPNIX
+================================================== -->
+
+  <section class="about-intro">
+
+    <div class="about-intro-label">
+      <span>01</span>
+      <span>WHAT IS OPNIX?</span>
+    </div>
+
+    <div class="about-intro-content">
+
+      <h2>
+        Not just another
+        <span>software company.</span>
+      </h2>
+
+      <p>
+        Opnix exists to turn ideas, problems, and opportunities into
+        practical digital solutions. We combine software development,
+        design, AI, and technology to create products that are built
+        around real needs.
+      </p>
+
+      <p>
+        Whether it's a business website, an internal tool, an AI-powered
+        workflow, or a complete digital product, we focus on making
+        technology useful, understandable, and scalable.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==================================================
+     THE WAY WE THINK
+================================================== -->
+
+  <section class="about-thinking">
+
+    <div class="section-heading">
+
+      <span class="section-label">OUR APPROACH</span>
+
+      <h2>
+        Start with the problem.
+        <br>
+        Build around the solution.
+      </h2>
+
+    </div>
+
+
+    <div class="thinking-grid">
+
+      <div class="thinking-card">
+
+        <span>01</span>
+
+        <h3>Understand</h3>
+
+        <p>
+          We first understand the problem, the users, and what the
+          business actually needs.
+        </p>
+
+      </div>
+
+
+      <div class="thinking-card">
+
+        <span>02</span>
+
+        <h3>Design</h3>
+
+        <p>
+          We shape the experience, structure, and interface before
+          turning the idea into a product.
+        </p>
+
+      </div>
+
+
+      <div class="thinking-card">
+
+        <span>03</span>
+
+        <h3>Build</h3>
+
+        <p>
+          We develop the solution using modern technologies and
+          practical engineering principles.
+        </p>
+
+      </div>
+
+
+      <div class="thinking-card">
+
+        <span>04</span>
+
+        <h3>Improve</h3>
+
+        <p>
+          A product doesn't end at launch. We improve, maintain,
+          and evolve it as needs change.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==================================================
+     WHAT WE BUILD
+================================================== -->
+
+  <section class="about-build">
+
+    <div class="about-build-header">
+
+      <span class="section-label">WHAT WE BUILD</span>
+
+      <h2>
+        From an idea
+        <span>to something real.</span>
+      </h2>
+
+    </div>
+
+
+    <div class="build-list">
+
+      <div class="build-item">
+
+        <span>01</span>
+
+        <div>
+          <h3>Digital Products</h3>
+          <p>
+            Websites, web applications, mobile applications,
+            and custom software.
+          </p>
+        </div>
+
+        <span class="build-arrow">↗</span>
+
+      </div>
+
+
+      <div class="build-item">
+
+        <span>02</span>
+
+        <div>
+          <h3>AI & Automation</h3>
+          <p>
+            Intelligent tools and automated workflows designed
+            to reduce repetitive work.
+          </p>
+        </div>
+
+        <span class="build-arrow">↗</span>
+
+      </div>
+
+
+      <div class="build-item">
+
+        <span>03</span>
+
+        <div>
+          <h3>Design Experiences</h3>
+          <p>
+            User interfaces, product experiences, and visual
+            systems that make technology easier to use.
+          </p>
+        </div>
+
+        <span class="build-arrow">↗</span>
+
+      </div>
+
+
+      <div class="build-item">
+
+        <span>04</span>
+
+        <div>
+          <h3>Technology Solutions</h3>
+          <p>
+            Technical support, application management, cloud
+            solutions, and ongoing improvements.
+          </p>
+        </div>
+
+        <span class="build-arrow">↗</span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==================================================
+     OUR PRINCIPLES
+================================================== -->
+
+  <section class="about-principles">
+
+    <div class="principles-header">
+
+      <span class="section-label">WHAT WE BELIEVE</span>
+
+      <h2>
+        Simple principles.
+        <br>
+        Serious work.
+      </h2>
+
+    </div>
+
+
+    <div class="principles-grid">
+
+      <div class="principle">
+        <h3>01 — Purpose</h3>
+        <p>
+          Technology should solve a real problem, not exist just
+          because it can be built.
+        </p>
+      </div>
+
+      <div class="principle">
+        <h3>02 — Simplicity</h3>
+        <p>
+          Complex technology should result in simple experiences
+          for the people using it.
+        </p>
+      </div>
+
+      <div class="principle">
+        <h3>03 — Quality</h3>
+        <p>
+          We care about the details that make a product reliable,
+          usable, and maintainable.
+        </p>
+      </div>
+
+      <div class="principle">
+        <h3>04 — Long Term</h3>
+        <p>
+          We believe digital products should evolve instead of
+          being treated as one-time projects.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==================================================
+     FOUNDER
+================================================== -->
+
+  <section class="founder-section">
+
+    <div class="founder-number">
+      05
+    </div>
+
+    <div class="founder-content">
+
+      <span class="section-label">THE PERSON BEHIND OPNIX</span>
+
+      <h2>
+        Built by
+        <span>Abhay Kurmi.</span>
+      </h2>
+
+      <p>
+        Opnix was founded by Abhay Kurmi with the idea of creating
+        a company where technology, design, and creativity come
+        together to solve practical problems.
+      </p>
+
+      <p>
+        The goal isn't to build everything.
+        It's to build things that are worth building.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==================================================
+     ABOUT CTA
+================================================== -->
+
+  <section class="about-cta">
+
+    <span class="section-label">HAVE AN IDEA?</span>
+
+    <h2>
+      Let's turn your idea
+      <span>into something real.</span>
+    </h2>
+
     <p>
-      Have ideas or suggestions?
-      <a href="feedback.html">We’d love your feedback →</a>
+      Tell us what you're trying to build, improve, or solve.
     </p>
-  </div>
 
-  <!-- Bottom -->
-  <div class="footer-bottom">
-    © <span id="year"></span> Opnix.ltd · Founded by Abhay Kurmi
-    <br />
-  </div>
-</footer>
-<script defer src="./Script.js"></script>
+    <a href="contact.html" class="btn">
+      Start a conversation →
+    </a>
+
+  </section>
+  <footer class="footer">
+    <div class="footer-content">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <h3>Opnix<span>.</span>Ltd</h3>
+        <p>
+          Turning ideas into reliable digital products through
+          design, technology, and innovation.
+        </p>
+
+        <!-- Social Media -->
+        <div class="footer-socials">
+          <a href="https://instagram.com/opnixtech.ltd" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/opnixtech/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="Twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <!-- Contact -->
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:opnixtech@gmail.com">opnixtech@gmail.com</a></p>
+        <p>Location: India</p>
+      </div>
+      <!-- Resources -->
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <a href="#">Blogs & Articles</a>
+        <a href="#">Case Studies</a>
+        <a href="#">Documentation</a>
+        <a href="#">FAQs</a>
+        <a href="#">Community</a>
+        <a href="#">Open Source</a>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-links">
+        <h4>Support</h4>
+        <a href="feedback.html">Feedback</a>
+        <a href="#">Help Center</a>
+        <a href="#">Report a Bug</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+
+    </div>
+
+    <!-- Feedback CTA -->
+    <div class="footer-feedback">
+      <p>
+        Have ideas or suggestions?
+        <a href="feedback.html">We’d love your feedback →</a>
+      </p>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      © <span id="year"></span> Opnix.ltd · Founded by Abhay Kurmi
+      <br />
+    </div>
+  </footer>
+  <script defer src="./Script.js"></script>
 </body>
+
 </html>
-
-
-

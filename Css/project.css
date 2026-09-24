@@ -182,32 +182,6 @@
   color: #0369a1;
 }
 
-
-/* =========================================
-   RESULT BADGE
-========================================= */
-
-.project-result {
-  position: absolute;
-
-  right: 12px;
-
-  bottom: 12px;
-
-  padding: 6px 10px;
-
-  border-radius: 20px;
-
-  background: rgba(15, 23, 42, 0.90);
-
-  color: #ffffff;
-
-  font-size: 11px;
-
-  backdrop-filter: blur(8px);
-}
-
-
 /* =========================================
    PROJECT TITLE
 ========================================= */

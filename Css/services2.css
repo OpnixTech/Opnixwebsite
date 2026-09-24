@@ -1,0 +1,402 @@
+/* ==================================================
+   OPNIX — SERVICES PAGE
+================================================== */
+/* ==================================================
+   OPNIX — SERVICES HEADER
+================================================== */
+
+.page-header {
+  width: 100%;
+  padding: 50px 8% 40px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-header h1 {
+  margin: 10px auto 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #0f172a;
+  background: linear-gradient(135deg, #0f172a, #2563eb, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-header p {
+  max-width: 650px;
+  margin: 0;
+}
+
+/* ==================================================
+   HEADER ANIMATION
+================================================== */
+
+.header-animation {
+  width: 300px;
+  height: 200px;
+  margin: 25px auto 0;
+}
+
+.header-animation iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* ==================================================
+   SERVICES SECTION
+================================================== */
+
+.services {
+  width: 100%;
+  padding: 20px 8% 100px;
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.services-header {
+  max-width: 750px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.services-header .section-label {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #2563eb;
+}
+
+.services-header h2 {
+  margin: 0 0 16px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(38px, 5vw, 58px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -2px;
+
+  color: #0f172a;
+}
+
+.services-header h2 span {
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #2563eb,
+    #38bdf8
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.services-header p {
+  max-width: 600px;
+
+  margin: 0 auto;
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+
+  color: #64748b;
+}
+
+
+/* ==================================================
+   SERVICE TABS
+================================================== */
+
+.service-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-bottom: 40px;
+}
+
+.service-tab {
+  padding: 10px 18px;
+
+  border: 1px solid rgba(219, 234, 254, 0.9);
+  border-radius: 50px;
+
+  background: rgba(255, 255, 255, 0.75);
+
+  color: #64748b;
+
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    color 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.service-tab:hover {
+  color: #2563eb;
+  border-color: #93c5fd;
+}
+
+.service-tab.active {
+  background: #2563eb;
+  border-color: #2563eb;
+
+  color: #fff;
+
+  box-shadow:
+    0 6px 18px rgba(37, 99, 235, 0.15);
+}
+
+
+/* ==================================================
+   SERVICE GRID
+================================================== */
+
+.service-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(270px, 1fr));
+
+  gap: 20px;
+}
+
+
+/* ==================================================
+   SERVICE CARD
+================================================== */
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 230px;
+
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(219, 234, 254, 0.9);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 35px rgba(37, 99, 235, 0.07);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+/* BLUE DECORATIVE GLOW */
+
+.service-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 100px;
+  height: 100px;
+
+  top: -50px;
+  right: -50px;
+
+  background: rgba(56, 189, 248, 0.15);
+
+  border-radius: 50%;
+
+  filter: blur(3px);
+
+  transition: transform 0.4s ease;
+}
+
+
+/* NUMBER */
+
+.service-number {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+
+  margin-bottom: 35px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+
+  color: #2563eb;
+}
+
+
+/* TITLE */
+
+.service-card h3 {
+  position: relative;
+  z-index: 1;
+
+  margin: 0 0 12px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+
+  color: #0f172a;
+}
+
+
+/* SMALL BLUE LINE */
+
+.service-card h3::after {
+  content: "";
+
+  display: block;
+
+  width: 40px;
+  height: 3px;
+
+  margin-top: 8px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #2563eb,
+      #38bdf8
+    );
+
+  border-radius: 5px;
+}
+
+
+/* DESCRIPTION */
+
+.service-card p {
+  position: relative;
+  z-index: 1;
+
+  margin: 0;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: #475569;
+}
+
+
+/* ==================================================
+   HOVER
+================================================== */
+
+.service-card:hover {
+  transform: translateY(-7px);
+
+  border-color:
+    rgba(56, 189, 248, 0.45);
+
+  box-shadow:
+    0 20px 50px rgba(37, 99, 235, 0.13);
+}
+
+.service-card:hover::before {
+  transform: scale(1.5);
+}
+
+
+/* ==================================================
+   FILTER
+================================================== */
+
+.service-card.hide {
+  display: none;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 700px) {
+
+  .services {
+    padding: 30px 6% 70px;
+  }
+
+  .services-header {
+    margin-bottom: 30px;
+  }
+
+  .services-header h2 {
+    font-size: 38px;
+    letter-spacing: -1.5px;
+  }
+
+  .services-header p {
+    font-size: 14px;
+  }
+
+  .service-tabs {
+    justify-content: flex-start;
+
+    flex-wrap: nowrap;
+
+    overflow-x: auto;
+
+    margin-right: -6%;
+    padding-right: 6%;
+    padding-bottom: 5px;
+
+    scrollbar-width: none;
+  }
+
+  .service-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .service-tab {
+    flex: 0 0 auto;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: 210px;
+
+    padding: 25px;
+
+    border-radius: 18px;
+  }
+
+}

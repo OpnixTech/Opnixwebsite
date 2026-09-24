@@ -68,3 +68,61 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+/* ==================================================
+   OPnix — Service Suggestions / Solution Finder
+   Handles expandable service recommendation cards
+================================================== */
+document.querySelectorAll(".suggestion-trigger").forEach((button) => {
+  button.addEventListener("click", () => {
+    const card = button.closest(".suggestion-card");
+
+    // Close other cards
+    document.querySelectorAll(".suggestion-card").forEach((item) => {
+      if (item !== card) {
+        item.classList.remove("active");
+      }
+    });
+
+    // Toggle clicked card
+    card.classList.toggle("active");
+  });
+});
+
+
+/* ==================================================
+   OPNIX — SERVICES FILTER
+================================================== */
+
+const serviceTabs = document.querySelectorAll(".service-tab");
+const serviceCards = document.querySelectorAll(".service-card");
+
+serviceTabs.forEach(tab => {
+
+  tab.addEventListener("click", () => {
+
+    const category = tab.dataset.category;
+
+    // Active tab
+    serviceTabs.forEach(item => {
+      item.classList.remove("active");
+    });
+
+    tab.classList.add("active");
+
+    // Filter cards
+    serviceCards.forEach(card => {
+
+      if (
+        category === "all" ||
+        card.dataset.category === category
+      ) {
+        card.classList.remove("hide");
+      } else {
+        card.classList.add("hide");
+      }
+
+    });
+
+  });
+
+});

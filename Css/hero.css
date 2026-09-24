@@ -31,16 +31,45 @@
 }
 
 /* button */
+/* ==================================================
+   OPNIX — BUTTON
+================================================== */
+
 .btn {
-  display:inline-block;
-  margin-top:30px;
-  padding:14px 34px;
-  background:linear-gradient(135deg,#38bdf8,#2563eb);
-  color:#fff;
-  text-decoration:none;
-  border-radius:40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 30px;
+  padding: 13px 24px;
+
+  border-radius: 40px;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
+.btn::after {
+  content: "→";
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.22);
+}
+
+.btn:hover::after {
+  transform: translateX(4px);
+}
 /* animation */
 .hero-animation{
   flex:1;

@@ -1,121 +1,518 @@
+/* ==================================================
+   OPNIX — CONTACT PAGE
+================================================== */
+
+
+/* ==================================================
+   CONTACT PAGE HEADER
+================================================== */
+
 .page-header {
-  padding: 90px 8% 30px;
+  padding: 100px 8% 70px;
   text-align: center;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(56, 189, 248, 0.14),
+      transparent 45%
+    ),
+    linear-gradient(
+      180deg,
+      #f8fbff 0%,
+      #eef6ff 100%
+    );
+}
+
+.page-header .section-label {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #2563eb;
 }
 
 .page-header h1 {
-  margin: 0;
+  max-width: 850px;
+  margin: 0 auto 20px;
   font-family: "Manrope", sans-serif;
-  font-size: 48px;
+  font-size: clamp(42px, 6vw, 70px);
   font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -2px;
+  line-height: 1.05;
+  letter-spacing: -3px;
   color: #0f172a;
 }
 
-.about,
-.contact {
-  max-width: 1050px;
-  margin: 50px auto 100px;
-  padding: 0 8%;
+.page-header p {
+  max-width: 650px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #64748b;
 }
 
-.about p,
-.contact p {
-  margin: 0 0 24px;
+
+/* ==================================================
+   LOTTIE ANIMATION
+================================================== */
+
+.about-animation {
+  width: 300px;
+  height: 200px;
+  margin: 45px auto 0;
+  overflow: hidden;
+}
+
+.about-animation iframe {
+  display: block;
+  width: 300px;
+  height: 200px;
+  border: none;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 600px) {
+
+  .page-header {
+    padding: 80px 6% 55px;
+  }
+
+  .page-header h1 {
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .page-header p {
+    font-size: 15px;
+  }
+
+  .about-animation {
+    width: 280px;
+    height: 190px;
+    margin-top: 35px;
+  }
+
+  .about-animation iframe {
+    width: 280px;
+    height: 190px;
+  }
+}
+/* ==================================================
+   CONTACT HERO
+================================================== */
+
+.contact-hero {
+  padding: 130px 8% 100px;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(56, 189, 248, 0.14),
+      transparent 45%
+    ),
+    linear-gradient(
+      180deg,
+      #f8fbff 0%,
+      #eef6ff 100%
+    );
+}
+
+.contact-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  margin: 0 0 25px;
+  font-size: clamp(48px, 7vw, 82px);
+  line-height: 1;
+  letter-spacing: -3px;
+  color: #0f172a;
+}
+
+.contact-hero h1 span {
+  display: block;
+  color: #2563eb;
+}
+
+.contact-hero p {
+  max-width: 680px;
+  margin: 0 auto;
   font-family: "Inter", sans-serif;
   font-size: 18px;
   line-height: 1.8;
   color: #64748b;
 }
 
-.about p:first-child,
-.contact p:first-child {
-  font-family: "Manrope", sans-serif;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 1.45;
-  letter-spacing: -0.8px;
-  color: #0f172a;
-  margin-bottom: 30px;
+
+/* ==================================================
+   CONTACT MAIN
+================================================== */
+
+.contact-main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 120px 8%;
 }
 
-.about p:first-child::first-line,
-.contact p:first-child::first-line {
+.contact-intro {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 60px;
+  margin-bottom: 70px;
+}
+
+.contact-number {
+  font-size: 13px;
+  font-weight: 600;
   color: #2563eb;
 }
 
-.about p:last-child,
-.contact p:last-child {
-  margin-bottom: 0;
+.contact-intro h2 {
+  max-width: 750px;
+  margin: 0 0 25px;
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+  color: #0f172a;
 }
 
-@media (max-width: 768px) {
-  .page-header {
-    padding: 70px 6% 30px;
+.contact-intro h2 span {
+  display: block;
+  color: #2563eb;
+}
+
+.contact-intro p {
+  max-width: 650px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #64748b;
+}
+
+
+/* ==================================================
+   CONTACT OPTIONS
+================================================== */
+
+.contact-options {
+  border-top: 1px solid #dbe5f0;
+}
+
+.contact-option {
+  display: grid;
+  grid-template-columns: 70px 1fr 50px;
+  align-items: center;
+  gap: 25px;
+  padding: 35px 0;
+  border-bottom: 1px solid #dbe5f0;
+  color: inherit;
+  text-decoration: none;
+  transition:
+    padding 0.3s ease,
+    background 0.3s ease;
+}
+
+.contact-option:hover {
+  padding-left: 15px;
+}
+
+.contact-option-number {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.contact-option-content span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+.contact-option-content h3 {
+  margin: 0 0 8px;
+  font-family: "Manrope", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.contact-option-content p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+.contact-option-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #dbe5f0;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #2563eb;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.contact-option:hover .contact-option-arrow {
+  transform: translate(3px, -3px);
+  background: #eef6ff;
+}
+
+
+/* ==================================================
+   WHAT CAN WE HELP WITH
+================================================== */
+
+.contact-services {
+  padding: 120px 8%;
+  background: #f8fbff;
+}
+
+.contact-services-header {
+  max-width: 1100px;
+  margin: 0 auto 60px;
+}
+
+.contact-services-header h2 {
+  max-width: 750px;
+  margin: 0;
+  font-size: clamp(36px, 5vw, 62px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+  color: #0f172a;
+}
+
+.contact-services-header h2 span {
+  display: block;
+  color: #2563eb;
+}
+
+.contact-service-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid #dbe5f0;
+  border-left: 1px solid #dbe5f0;
+}
+
+.contact-service {
+  min-height: 210px;
+  padding: 35px;
+  border-right: 1px solid #dbe5f0;
+  border-bottom: 1px solid #dbe5f0;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.contact-service:hover {
+  background: #ffffff;
+}
+
+.contact-service > span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.contact-service h3 {
+  margin: 35px 0 10px;
+  font-family: "Manrope", sans-serif;
+  font-size: 21px;
+  color: #0f172a;
+}
+
+.contact-service p {
+  max-width: 400px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #64748b;
+}
+
+
+/* ==================================================
+   CONTACT CTA
+================================================== */
+
+.contact-cta {
+  margin: 100px 8%;
+  padding: 100px 30px;
+  text-align: center;
+  border: 1px solid #dbeafe;
+  border-radius: 28px;
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(56, 189, 248, 0.16),
+      transparent 50%
+    ),
+    linear-gradient(
+      135deg,
+      #eef7ff,
+      #f8fbff
+    );
+}
+
+.contact-cta h2 {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-size: clamp(38px, 5vw, 60px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+  color: #0f172a;
+}
+
+.contact-cta h2 span {
+  display: block;
+  color: #2563eb;
+}
+
+.contact-cta p {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #64748b;
+}
+
+.contact-cta-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 32px;
+  border-radius: 50px;
+  background: linear-gradient(
+    135deg,
+    #38bdf8,
+    #2563eb
+  );
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact-cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.2);
+}
+
+
+/* ==================================================
+   RESPONSIVE — TABLET
+================================================== */
+
+@media (max-width: 900px) {
+
+  .contact-intro {
+    grid-template-columns: 1fr;
+    gap: 25px;
   }
 
-  .page-header h1 {
-    font-size: 40px;
+  .contact-service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ==================================================
+   RESPONSIVE — MOBILE
+================================================== */
+
+@media (max-width: 600px) {
+
+  .contact-hero {
+    padding: 100px 6% 75px;
   }
 
-  .about,
-  .contact {
-    margin: 40px auto 70px;
-    padding: 0 6%;
+  .contact-hero h1 {
+    font-size: 45px;
+    letter-spacing: -2px;
   }
 
-  .about p:first-child,
-  .contact p:first-child {
-    font-size: 25px;
-  }
-
-  .about p,
-  .contact p {
+  .contact-hero p {
     font-size: 16px;
   }
-}
 
-@media (max-width: 480px) {
-  .page-header {
-    padding: 55px 20px 25px;
+  .contact-main {
+    padding: 80px 6%;
   }
 
-  .page-header h1 {
-    font-size: 32px;
-    letter-spacing: -1px;
+  .contact-intro h2 {
+    font-size: 38px;
   }
 
-  .about,
-  .contact {
-    padding: 0 20px;
-    margin-bottom: 55px;
+  .contact-intro p {
+    font-size: 16px;
   }
 
-  .about p:first-child,
-  .contact p:first-child {
-    font-size: 22px;
-    line-height: 1.5;
+  .contact-option {
+    grid-template-columns: 40px 1fr 40px;
+    gap: 12px;
+    padding: 28px 0;
   }
 
-  .about p,
-  .contact p {
-    font-size: 14px;
-    line-height: 1.75;
+  .contact-option-content h3 {
+    font-size: 18px;
+    word-break: break-word;
   }
-}
 
-.about-animation {
-  width: 300px;
-  height: 200px;
-  margin: 0 auto;
-  padding: 0;
-  overflow: hidden;
-}
+  .contact-option-content p {
+    font-size: 13px;
+  }
 
-.about-animation iframe {
-  width: 300px;
-  height: 200px;
-  border: none;
-  display: block;
+  .contact-option-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 17px;
+  }
+
+  .contact-services {
+    padding: 80px 6%;
+  }
+
+  .contact-services-header {
+    margin-bottom: 40px;
+  }
+
+  .contact-services-header h2 {
+    font-size: 38px;
+  }
+
+  .contact-service {
+    min-height: auto;
+    padding: 28px 24px;
+  }
+
+  .contact-service h3 {
+    margin-top: 25px;
+    font-size: 19px;
+  }
+
+  .contact-cta {
+    margin: 60px 5% 70px;
+    padding: 70px 20px;
+  }
+
+  .contact-cta h2 {
+    font-size: 38px;
+  }
 }
